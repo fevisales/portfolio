@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe - Explorador</title>
+    <link rel="stylesheet" href="css/style.css"><!-- pra importar o css -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">  =<!-- Ícone do site -->      
+    </head>
+
+<body>
+    <header>
+        <!-- Cabeçalho com menu fixo -->
+        <nav>
+            <ul class="menu">
+                <!-- Menu de navegação com 4 links âncora para as seções -->
+                <li><a href="#sobre">🧔 SOBRE MIM</a></li>
+                <li><a href="#formacao">📚 FORMAÇÃO</a></li>
+                <li><a href="#portfolio">📘 PORTFÓLIO</a></li>
+                <li><a href="#contato">✉️ CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Área principal da página -->
+        
+        <section class="avatar">
+            <!-- Avatar em estilo pixel art -->
+            <img src="images/avatar_felipe_pixel_art.png" alt="Felipe em estilo pixel art">
+        </section>
+
+        <section class="descricao">
+            <!-- Aqui ficam todas as seções de conteúdo, falando de mim, da exp e tal-->
+
+            <section id="sobre">
+                <h1>FELIPE SALES</h1>
+                <p><strong>Classe:</strong> QA Explorer e Programador em Construção</p>
+                <p><strong>Nível:</strong> Dev em Transição</p>
+                <p><strong>Missão Ativa:</strong> Defendia os softwares que testava dos bugs, mas atualmente está estudando para mudar de classe e cumprir sua missão: se tornar DEV incrível.</p>
+                <p>Com mais de três anos de experiência na área de qualidade de software, já atuou com testes funcionais end-to-end, API, planejamento e gerenciamento de BUGS - além de conhecer de perto, todo o fluxo de desenvolvimento do discovery ao deploy.</p>
+            </section>
+
+            <section id="formacao">
+                <h2>📚 Formação</h2>
+                <ul>
+                    <!-- Lista com sua formação, certificações e idiomas -->
+                    <li>🎓 Cursando Análise e Desenvolvimento de Sistemas - Centro Universitário Internacional - Uninter</li>
+                    <li>📜 Certificações QA: ASTFC™, ASFC™, SFPC™</li>
+                    <li>🧪 Experiência com testes manuais, testes de API, planejamento e gerenciamento de testes, gestão de defeitos</li>
+                    <li>🌍 Idiomas: Português (nativo), Inglês (nível B1)</li>
+                </ul>
+            </section>
+
+            <section id="portfolio">
+                <h2>📘 Portfólio</h2>
+                <p>Introdução aos projetos disponíveis no GitHub</p>
+                <div class="projetos">
+                    <!-- Cada projeto tem uma imagem com link pro repositório -->
+                    <a href="https://github.com/fevisales/estudo-desenvolvimento-web" target="_blank">
+                        <img src="images/thumb_1.png" alt="Miniatura do Projeto Desenvolvimento Web do filme do Mário">
+                        <p>Estudo Desenvolvimento Web - Página Filme do Mário</p>
+                    </a>
+                    <a href="https://github.com/fevisales/nlw-setup" target="_blank">
+                        <img src="images/thumb_2.png" alt="Miniatura do Projeto Desenvolvimento Web do check-list do dia">
+                        <p>Estudo Desenvolvimento Web - Página de check-list do dia</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="contato">
+                <!-- Seção CONTATO que simula o envio do e-mail -->
+                <h2>✉️ Contato</h2>
+                <form onsubmit="enviarMensagem(event)">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Felipe Sales. Um pouco de diversão, html, css e JS!</p>
+    </footer>
+
+    <script>
+        // Função para simular envio de mensagem ao clicar no botão
+        function enviarMensagem(event) {
+            event.preventDefault();
+            alert("Mensagem enviada com sucesso! Felipe vai te responder logo.");
+        }
+    </script>
+</body>
+</html>
